@@ -1,0 +1,44 @@
+{
+    "name": "Vivek Portfolio",
+    "description": "Laravel Portfolio Application",
+    "keywords": ["php", "laravel", "portfolio"],
+    "website": "https://github.com/Vivek-V-Nair/portfolio",
+    "repository": "https://github.com/Vivek-V-Nair/portfolio",
+    "logo": "https://laravel.com/img/logomark.min.svg",
+    "success_url": "/",
+    "scripts": {
+        "postdeploy": "php artisan migrate --force && php artisan config:cache && php artisan route:cache && php artisan view:cache"
+    },
+    "env": {
+        "APP_ENV": {
+            "description": "Application environment",
+            "value": "production"
+        },
+        "APP_DEBUG": {
+            "description": "Debug mode",
+            "value": "false"
+        },
+        "APP_KEY": {
+            "description": "Laravel application key",
+            "generator": "secret"
+        },
+        "LOG_CHANNEL": {
+            "description": "Log channel",
+            "value": "errorlog"
+        }
+    },
+    "formation": {
+        "web": {
+            "quantity": 1,
+            "size": "eco"
+        }
+    },
+    "addons": [
+        "heroku-postgresql:essential-0"
+    ],
+    "buildpacks": [
+        {
+            "url": "heroku/php"
+        }
+    ]
+}
