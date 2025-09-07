@@ -1,0 +1,52 @@
+# Ignore Docker volumes and temporary files
+.env
+node_modules/
+vendor/
+*.log
+
+# Ignore OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore Docker build cache
+.dockerignore
+
+# Laravel specific
+laravel-app/storage/app/*
+laravel-app/storage/framework/cache/*
+laravel-app/storage/framework/sessions/*
+laravel-app/storage/framework/views/*
+laravel-app/storage/logs/*
+!laravel-app/storage/app/.gitkeep
+!laravel-app/storage/framework/.gitkeep
+!laravel-app/storage/framework/cache/.gitkeep
+!laravel-app/storage/framework/sessions/.gitkeep
+!laravel-app/storage/framework/views/.gitkeep
+!laravel-app/storage/logs/.gitkeep
+
+# Environment files
+.env
+.env.backup
+.env.production
+
+# Composer
+laravel-app/vendor/
+
+# Node
+laravel-app/node_modules/
+
+# NPM
+laravel-app/npm-debug.log*
+laravel-app/yarn-debug.log*
+laravel-app/yarn-error.log*
