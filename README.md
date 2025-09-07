@@ -1,52 +1,118 @@
-# Laravel Portfolio App (Dockerized)
+# Laravel Portfolio
 
-This project is a Laravel application set up to host your portfolio, running in Docker containers for easy local development.
+A professional portfolio website built with Laravel and Docker, showcasing skills and experience for Software Engineering Dual Study Programme applications.
 
-## Features
-- Laravel 12.x
-- PHP 8.2 (FPM)
-- MySQL 8
-- Nginx
-- Composer
-- Docker Compose for orchestration
+## 🚀 Features
 
-## Getting Started
+- **Dark Mode Design** - Modern, professional dark theme
+- **Responsive Layout** - Works perfectly on all devices
+- **Docker Setup** - Easy development environment
+- **Laravel Framework** - Robust PHP framework
+- **Professional Sections** - Profile, Skills, Education, Experience, etc.
+
+## 🛠️ Tech Stack
+
+- **Backend:** Laravel 12.x
+- **Frontend:** HTML5, Tailwind CSS, Font Awesome
+- **Database:** MySQL 8.0
+- **Containerization:** Docker & Docker Compose
+- **Server:** Laravel Artisan (Development)
+
+## 📋 Quick Start
 
 ### Prerequisites
-- [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
-### Setup
-1. Clone this repository or copy the files to your project directory.
-2. Open a terminal in the project root.
-3. Run:
-   ```powershell
-   docker-compose up --build
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Vivek-V-Nair/portfolio.git
+   cd portfolio
    ```
-4. Visit [http://localhost:8080](http://localhost:8080) in your browser.
 
-### Database
-- MySQL is available at `localhost:3306` (user: `laravel`, password: `secret`, database: `laravel`).
-- Update your `.env` file in `laravel-app` if you want to change database settings.
+2. Start the application:
+   ```bash
+   docker-compose -f docker-compose-simple.yml up -d
+   ```
+
+3. Visit your portfolio:
+   ```
+   http://localhost:8080
+   ```
+
+## 🐳 Docker Services
+
+- **Laravel App:** Port 8080 (Artisan server)
+- **MySQL Database:** Port 3307
+- **Simple Setup:** Single command deployment
+
+## 📁 Project Structure
+
+```
+portfolio/
+├── laravel-app/           # Laravel application
+│   ├── resources/views/   # Blade templates
+│   ├── public/           # Static assets
+│   └── routes/           # Application routes
+├── docker-compose-simple.yml  # Simplified Docker setup
+├── Dockerfile.simple     # Docker configuration
+└── README.md             # This file
+```
+
+## 🎨 Portfolio Sections
+
+- **Header** - Profile photo and contact information
+- **Profile** - Professional summary
+- **About Me** - Personal motivation and goals
+- **Skills** - Technical and soft skills
+- **Education** - Academic background
+- **Work Experience** - Projects and experience
+- **Languages** - Language proficiencies
+- **Interests** - Personal interests and hobbies
+
+## 🔧 Development
+
+### Adding Content
+Edit the portfolio content in:
+```
+laravel-app/resources/views/portfolio.blade.php
+```
+
+### Database Access
+- **Host:** localhost
+- **Port:** 3307
+- **Database:** laravel
+- **Username:** laravel
+- **Password:** secret
 
 ### Useful Commands
-- To run artisan commands:
-  ```powershell
-  docker-compose exec app php artisan migrate
-  ```
-- To install new Composer packages:
-  ```powershell
-  docker-compose exec app composer require <package>
-  ```
 
-## Customization
-- Place your portfolio code in the `laravel-app` directory.
-- Edit routes, controllers, and views as needed.
+```bash
+# Stop containers
+docker-compose -f docker-compose-simple.yml down
 
-## Stopping the App
-```powershell
-docker-compose down
+# View logs
+docker-compose -f docker-compose-simple.yml logs
+
+# Access Laravel container
+docker-compose -f docker-compose-simple.yml exec app bash
+
+# Run Artisan commands
+docker-compose -f docker-compose-simple.yml exec app php artisan <command>
 ```
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 👤 Contact
+
+**Vivek Venugopal Nair**
+- Email: vivekrokzz01@gmail.com
+- Phone: +49 17624302844
+- Location: Berlin, Germany
 
 ---
 
-This setup is ready for you to build and deploy your portfolio using Laravel!
+*Application for Software Engineering Dual Study Programme*
