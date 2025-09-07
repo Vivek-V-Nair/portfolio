@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vivek Venugopal Nair - Portfolio</title>
+    <title>Vivek  Nair - Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
@@ -17,7 +17,7 @@
                         <img src="{{ asset('images/profile.jpg') }}" alt="Vivek Venugopal Nair" class="w-full h-full object-cover">
                     </div>
                     <div class="text-center md:text-left">
-                        <h1 class="text-4xl font-bold text-blue-400">VIVEK VENUGOPAL NAIR</h1>
+                        <h1 class="text-4xl font-bold text-blue-400">VIVEK  NAIR</h1>
                         <p class="text-xl mt-2 text-gray-300">Software Engineering Student</p>
                     </div>
                 </div>
