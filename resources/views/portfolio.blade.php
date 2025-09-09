@@ -17,7 +17,7 @@
                         <img src="{{ asset('images/profile.jpg') }}" alt="Vivek Venugopal Nair" class="w-full h-full object-cover">
                     </div>
                     <div class="text-center md:text-left">
-                        <h1 class="text-4xl font-bold text-blue-400">VIVEK  NAIR</h1>
+                        <h1 class="text-4xl font-bold text-blue-400">VIVEK VENUGOPAL NAIR</h1>
                         <p class="text-xl mt-2 text-gray-300">Software Engineering Student</p>
                     </div>
                 </div>
@@ -144,7 +144,7 @@
                                 <span class="text-yellow-400 font-semibold">65%</span>
                             </div>
                             <div class="bg-gray-700 rounded-full h-3">
-                                <div class="skill-progress bg-gradient-to-r from-yellow-500 to-orange-600 h-3 rounded-full" data-percentage="65"></div>
+                                <div class="skill-progress bg-gradient-to-r from-yellow-500 to-yellow-600 h-3 rounded-full" data-percentage="65"></div>
                             </div>
                         </div>
                     </div>
